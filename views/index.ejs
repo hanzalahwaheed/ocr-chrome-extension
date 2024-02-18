@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form
+      action="/extractTextFromImage"
+      method="post"
+      enctype="multipart/form-data"
+    >
+      <label for="file">Upload File: </label>
+      <input type="file" name="file" accept="image/*" required />
+      <button>Get Text from Image</button>
+    </form>
+    <textarea cols="10" rows="10"><%=data%> </textarea>
+  </body>
+</html>
